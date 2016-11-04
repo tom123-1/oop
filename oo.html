@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.2.0.min.js"></script>
+</head>
+<body>
+<button id="button">点我啊</button>
+</body>
+<script>
+//    var A = {
+//        name: '张三',
+//        describe: function () {
+//            return '姓名：'+ this.name;
+//        }
+//    };
+//
+//    var name = '李四';
+//    var f = A.describe;
+//    console.log(f());
+
+//var o = {
+//    f1: function() {
+//        console.log(this);
+//        var that = this;
+//        var f2 = function() {
+//            console.log(that);
+//        }();
+//    }
+//}
+//
+//o.f1()
+
+//var counter = {
+//    count: 0
+//};
+//counter.inc = function () {
+//    this.count++
+//};
+//var f = counter.inc;
+//f()
+
+//function add(a, b) {
+//    return a + b;
+//}
+//
+//var val=add(1, 2);
+//
+//    console.log(val)
+
+//function wrapper(generatorFunction) {
+//    return function () {
+//
+//        let generatorObject = generatorFunction();
+////        console.log(generatorObject);
+//        generatorObject.next();
+//        return generatorObject;
+//    };
+//}
+//
+//const wrapped = wrapper(function* () {
+//    console.log(`First input: ${yield}`);
+//    yield 1;
+//
+//    return 'DONE';
+//});
+//
+//console.log(wrapped().next('hello!'));
+//wrapped().next('world!')
+
+//function f(x,y){
+//    console.log(x+y);
+//}
+//
+//f.call(this,1,1)
+//f.apply(null,[1,1])
+
+//var a = [10, 2, 4, 15, 9];
+//
+//var val=Math.min.apply(this, a);
+//console.log(val);
+//
+////var arr=Array.prototype.slice.apply({0:1,length:0})
+////console.log(arr)
+//
+//console.log(Array.prototype.slice.apply({length:1}));
+
+
+//var a="外部的";
+//var f = function (){
+//   this.a="内部的";
+//    console.log(this.a);
+//    setTimeout(function () {
+//        console.log(this.a);
+//    }.bind(this),2000);
+//
+//};
+//
+//$('#button').on('click', f);
+
+var print = console.log.bind(console);
+print(2)
+</script>
+</html>
